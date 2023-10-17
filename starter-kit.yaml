@@ -1,0 +1,14 @@
+export_paths:
+  - app/Console/Commands
+  - package.json
+export_as:
+  README-kit.md: README.md
+dependencies:
+  eminos/statamic-tabs: ^1.0
+  gioppy/statamic-metatags: ^3.0
+  marcorieser/tailwind-merge-statamic: ^0.2.0
+  mitydigital/sitemapamic: ^2.3
+  octoper/statamic-inline-assets: ^1.0
+  spatie/statamic-responsive-images: ^4.1
+  stillat/antlers-components: ^2.1
+  takepart-media/statamic-oreos: ^1.3

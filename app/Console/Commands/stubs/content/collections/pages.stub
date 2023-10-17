@@ -1,0 +1,4 @@
+title: Pages
+structure: {}
+route: '{parent_uri}/{slug}'
+propagate: true
