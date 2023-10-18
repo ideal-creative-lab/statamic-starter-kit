@@ -48,6 +48,9 @@ To run the project, you need to install [PHP](https://www.php.net/manual/en/inst
     ```zsh
     php artisan set-storage:db
     ```
+        
+    > [!IMPORTANT]
+    > Before running the command, make sure you have configured your database settings!
     
 4. For hot reloading you can use Bun:
     ```zsh
