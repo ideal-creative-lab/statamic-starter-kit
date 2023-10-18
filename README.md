@@ -22,12 +22,8 @@
 
 **Statamic Starter Kit** is a collection of tools and libraries to make developing your Statamic projects easier. This set includes several useful packages and tools that will help you quickly get started and easily develop web applications in Statamic.
 
-
-**⚠️ Before contributing to the project, please, carefully read through this README document.**
-
-## ️ Getting Started
-These instructions will get you a copy of the project up and running on your local machine for development and testing
-purposes.
+> [!IMPORTANT]
+> Before contributing to the project, please, carefully read through this README document.
 
 ### Prerequisites
 To run the project, you need to install [PHP](https://www.php.net/manual/en/install.php) and dependency manager
@@ -35,9 +31,12 @@ To run the project, you need to install [PHP](https://www.php.net/manual/en/inst
 
 #### Installation:
 
-1. ⚠️Before installation, make sure that you are installing the kit on a clean static project
+1.  Before installation, you can choose between clean up project and installing over existing files (layout.antlers.stub and User model can be overwritten).
+    
+    Recommended installation on a clean statamic project.
+    
     ```zsh
-    php please starter-kit:install ideal-creative-lab/statamic-starter-kit-dev
+    php please starter-kit:install ideal-creative-lab/statamic-starter-kit
     ```
 
 2. Run command for installation of [HTMX or LiveWire](https://github.com/ideal-creative-lab/statamic-starter-kit-dev/wiki/How-to-install-HTMX-LiviWire):
