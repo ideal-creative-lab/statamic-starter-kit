@@ -39,12 +39,12 @@ To run the project, you need to install [PHP](https://www.php.net/manual/en/inst
     php please starter-kit:install ideal-creative-lab/statamic-starter-kit
     ```
 
-2. Run command for installation of [HTMX or LiveWire](https://github.com/ideal-creative-lab/statamic-starter-kit-dev/wiki/How-to-install-HTMX-LiviWire):
+2. Run command for installation of [HTMX or LiveWire](https://github.com/ideal-creative-lab/statamic-starter-kit/wiki/How-to-install-HTMX-LiveWire):
     ```zsh
     php artisan install:tool
     ```
 
-3. If you want to [store data in database](https://github.com/ideal-creative-lab/statamic-starter-kit-dev/wiki/How-to-store-data-in-database) instead of files then run following command:
+3. If you want to [store data in database](https://github.com/ideal-creative-lab/statamic-starter-kit/wiki/How-to-store-data-in-database) instead of files then run following command:
     ```zsh
     php artisan set-storage:db
     ```
