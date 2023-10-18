@@ -5,8 +5,8 @@ class StarterKitPostInstall
 {
     public function handle($console)
     {
-        $this->executeCommand('npm install -g bun');
-        $this->executeCommand('bun init');
+        $this->executeCommand('npm install -g bun', $console);
+        $this->executeCommand('bun init', $console);
 
         $console->line('Statamic starter kit installed successfully!');
     }
@@ -16,16 +16,17 @@ class StarterKitPostInstall
      *
      * @param string $command The shell command to execute.
      *
+     * @param $console
      * @return void
      */
-    protected function executeCommand($command)
+    protected function executeCommand($command, $console)
     {
         $process = Process::fromShellCommandline($command, base_path());
         $process->run();
 
         if (!$process->isSuccessful()) {
-            $this->error('Error executing command: ' . $command);
-            $this->error($process->getErrorOutput());
+            $console->error('Error executing command: ' . $command);
+            $console->error($process->getErrorOutput());
             exit(1);
         }
     }
