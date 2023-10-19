@@ -83,7 +83,12 @@ class InstallBaseTool extends Command
     {
         $this->info('Installing HTMX...');
 
-        $this->executeCommand('npm install -D alpinejs htmx.org @alpinejs/morph');
+        if ($this->filesystem->exists(app_path('Console/Commands/stubs/config/manager.stub'))) {
+            $this->executeCommand($this->filesystem->get(app_path('Console/Commands/stubs/config/manager.stub')) . ' install -D alpinejs htmx.org @alpinejs/morph');
+        } else {
+            $this->executeCommand('bun install -D alpinejs htmx.org @alpinejs/morph');
+        }
+
         $this->updateJs();
 
         $this->info('HTMX installed');

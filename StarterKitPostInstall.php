@@ -4,8 +4,7 @@ class StarterKitPostInstall
 {
     public function handle($console)
     {
-        exec('npm install -g bun');
-        exec('bun init');
+        exec('php artisan set:package');
         $console->line('Statamic starter kit installed successfully!');
     }
 }
